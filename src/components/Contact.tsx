@@ -92,7 +92,7 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/umairjabbar',
+      href: 'https://github.com/umairdev76',
       gradient: 'from-gray-700 to-gray-900'
     }
   ];
