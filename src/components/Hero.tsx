@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/profile-placeholder.jpg';
-import Scene3D from './Scene3D';
+
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,12 +39,6 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 py-20 relative z-10">
-        
-        {/* 3D Animation Section */}
-        <div className={`text-center mb-12 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
-          <Scene3D />
-        </div>
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           {/* Profile Image */}
