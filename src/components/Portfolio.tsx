@@ -191,8 +191,7 @@ const Portfolio = () => {
                 <Button 
                   variant="outline"
                   onClick={() => window.open('https://github.com/umairjabbar', '_blank')}
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-3 h-auto"
-                >
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-3 h-auto" >
                   <Github className="mr-2 h-5 w-5" />
                   View All Projects
                 </Button>

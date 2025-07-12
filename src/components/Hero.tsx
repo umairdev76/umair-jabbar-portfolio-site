@@ -106,7 +106,7 @@ const Hero = () => {
                   <Linkedin className="h-5 w-5 group-hover:text-primary-foreground" />
                 </a>
                 <a 
-                  href="https://github.com/umairjabbar" 
+                  href="https://github.com/umairdev76" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-card border border-border/20 rounded-full hover:bg-primary hover:border-primary transition-all duration-300 button-glow group"
