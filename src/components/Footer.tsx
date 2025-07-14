@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-card border-t border-border/20">
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-14 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           
           {/* Brand Section */}
@@ -117,11 +117,11 @@ const Footer = () => {
             <div className="text-muted-foreground text-sm">
               © {currentYear} Muhammad Umair Jabbar. All rights reserved.
             </div>
-            <div className="flex items-center text-muted-foreground text-sm">
+            {/* <div className="flex items-center text-muted-foreground text-sm">
               <span>Made with</span>
               <Heart className="h-4 w-4 mx-1 text-red-500 animate-pulse" />
               <span>using React.js & Tailwind CSS</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

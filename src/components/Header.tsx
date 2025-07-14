@@ -38,11 +38,10 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <img 
-  src="/public/umairfavi.png" // or wherever your logo is
-  alt="MUJ Logo"
-  className="h-10 w-auto hero-text"
-/>
+          <div className="flex items-center ">
+  <img src="/logo.png" alt="MUJ Logo" className="h-12 w-auto" />
+  <span className="text-xl font-bold text-white">MUJ</span>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -75,27 +74,37 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-card rounded-lg border border-border/20">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-4 py-2 text-foreground hover:text-primary hover:bg-muted transition-colors duration-200"
-              >
-                {item.label}
-              </button>
-            ))}
-            <div className="px-4 pt-2">
-              <Button 
-                onClick={() => scrollToSection('contact')}
-                className="w-full bg-primary hover:bg-primary-glow button-glow"
-              >
-                Hire Me
-              </Button>
-            </div>
-          </div>
-        )}
+        <div className={`fixed inset-y-0 right-0 z-50 w-64 bg-card shadow-lg transform transition-transform duration-300 md:hidden ${
+  isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+}`}>
+  <div className="flex justify-end p-4">
+    <Button
+      variant="ghost"
+      size="icon"
+      onClick={() => setIsMobileMenuOpen(false)}
+    >
+      <X size={24} />
+    </Button>
+  </div>
+  <div className="flex flex-col space-y-2 px-6">
+    {navItems.map((item) => (
+      <button
+        key={item.id}
+        onClick={() => scrollToSection(item.id)}
+        className="text-left text-foreground hover:text-primary transition-colors duration-200 py-2"
+      >
+        {item.label}
+      </button>
+    ))}
+    <Button
+      onClick={() => scrollToSection('contact')}
+      className="bg-primary hover:bg-primary-glow button-glow mt-4"
+    >
+      Hire Me
+    </Button>
+  </div>
+</div>
+
       </nav>
     </header>
   );

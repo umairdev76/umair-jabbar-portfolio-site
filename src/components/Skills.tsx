@@ -28,9 +28,9 @@ const Skills = () => {
     { name: 'CSS3', level: 85, color: 'from-blue-500 to-cyan-500' },
     { name: 'JavaScript', level: 80, color: 'from-yellow-500 to-orange-500' },
     { name: 'React.js', level: 75, color: 'from-cyan-500 to-blue-500' },
-    { name: 'Git & GitHub', level: 70, color: 'from-purple-500 to-pink-500' },
-    { name: 'C++', level: 65, color: 'from-green-500 to-emerald-500' },
-    { name: 'OOP', level: 65, color: 'from-green-500 to-emerald-500' },
+    { name: 'Git & GitHub', level: 80, color: 'from-purple-500 to-pink-500' },
+    { name: 'C++', level: 70, color: 'from-green-500 to-emerald-500' },
+    { name: 'OOP', level: 70, color: 'from-green-500 to-emerald-500' },
   ];
 
   const softSkills = [
@@ -44,7 +44,7 @@ const Skills = () => {
 
   return (
     <section id="skills" ref={sectionRef} className="py-20">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-14">
         
         {/* Section Header */}
         <div className={`text-center mb-16 ${isVisible ? 'fade-in' : 'opacity-0'}`}>

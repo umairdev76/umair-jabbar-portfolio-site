@@ -99,7 +99,7 @@ const Contact = () => {
 
   return (
     <section id="contact" ref={sectionRef} className="py-20 bg-muted/5">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-14">
         <div className={`text-center mb-16 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Get In <span className="hero-text">Touch</span>

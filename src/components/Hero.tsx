@@ -38,7 +38,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <div className="container mx-auto px-14 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           {/* Profile Image */}
@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
                 <img 
-                  src={profileImage} 
+                  src="/public/profile-img.png" 
                   alt="Muhammad Umair Jabbar" 
                   className="w-full h-full object-cover"
                 />
@@ -86,7 +86,7 @@ const Hero = () => {
                   View My Work
                 </Button>
                 <a 
-  href="/src/assets/umair resume.pdf" 
+  href="/umair resume.pdf" 
   download 
   className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-3 h-auto transition-all duration-300 rounded-md flex items-center gap-2"
 >
