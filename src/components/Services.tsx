@@ -121,7 +121,7 @@ const Services = () => {
                   <Button
                     onClick={scrollToContact}
                     variant="ghost"
-                    className="mt-auto p-0 h-auto text-primary hover:text-primary-glow justify-start group/btn"
+                    className="mt-auto p-2 h-auto w-fit text-primary hover:text-primary-glow justify-start group/btn"
                   >
                     <span className="mr-2">Get Started</span>
                     <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />

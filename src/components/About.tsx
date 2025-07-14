@@ -56,9 +56,10 @@ const About = () => {
           
           {/* Bio Section */}
           <div className={`space-y-6 ${isVisible ? 'slide-up' : 'opacity-0'}`}>
+            <h3 className="text-2xl font-semibold mb-6 hero-text">My Story</h3>
             <Card className="bg-card-gradient card-glow">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6 hero-text">My Story</h3>
+                
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     I am Muhammad Umair Jabbar, a recent graduate from the University of Gujrat with a passion for frontend web development. I enjoy creating modern, responsive, and user-friendly websites that provide exceptional user experiences.
@@ -81,7 +82,7 @@ const About = () => {
             <div className="space-y-6">
               {education.map((edu, index) => (
                 <Card key={index} className="bg-card-gradient card-glow hover:shadow-[0_0_50px_hsl(256_100%_65%_/_0.3)] transition-all duration-300">
-                  <CardContent className="p-6">
+                  <CardContent className="p-8">
                     <div className="flex items-start space-x-4">
                       <div className="p-3 bg-primary/10 rounded-lg">
                         <edu.icon className="h-6 w-6 text-primary" />
@@ -108,34 +109,35 @@ const About = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-
-            {/* Quick Stats */}
-            <Card className="bg-card-gradient card-glow">
-              <CardContent className="p-6">
-                <h4 className="text-lg font-semibold mb-4 text-center">Quick Facts</h4>
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-primary">4+</div>
-                    <div className="text-sm text-muted-foreground">Years Learning</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-primary">5+</div>
-                    <div className="text-sm text-muted-foreground">Projects</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-primary">2024</div>
-                    <div className="text-sm text-muted-foreground">Graduate</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-primary">∞</div>
-                    <div className="text-sm text-muted-foreground">Passion</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            </div> 
           </div>
         </div>
+         {/* Quick Stats */}
+        <div className="flex justify-center mt-16">
+      <Card className="bg-card-gradient card-glow max-w-2xl w-full">
+        <CardContent className="p-6">
+          <h4 className="text-lg font-semibold mb-4 text-center">Quick Facts</h4>
+          <div className="grid grid-cols-2 gap-4 text-center">
+            <div>
+              <div className="text-2xl font-bold text-primary">4+</div>
+              <div className="text-sm text-muted-foreground">Years Learning</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-primary">5+</div>
+              <div className="text-sm text-muted-foreground">Projects</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-primary">2024</div>
+              <div className="text-sm text-muted-foreground">Graduate</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-primary">∞</div>
+              <div className="text-sm text-muted-foreground">Passion</div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
       </div>
     </section>
   );

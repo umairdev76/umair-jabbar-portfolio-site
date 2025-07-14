@@ -38,9 +38,11 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold hero-text">
-            MUJ
-          </div>
+          <img 
+  src="/public/umairfavi.png" // or wherever your logo is
+  alt="MUJ Logo"
+  className="h-10 w-auto hero-text"
+/>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
