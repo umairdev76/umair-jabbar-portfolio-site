@@ -60,7 +60,7 @@ const About = () => {
             <Card className="bg-card-gradient card-glow">
               <CardContent className="p-8">
                 
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-1 text-muted-foreground leading-relaxed">
                   <p>
                     I am Muhammad Umair Jabbar, a recent graduate from the University of Gujrat with a passion for frontend web development. I enjoy creating modern, responsive, and user-friendly websites that provide exceptional user experiences.
                   </p>

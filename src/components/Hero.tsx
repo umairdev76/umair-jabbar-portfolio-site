@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/profile-placeholder.jpg';
+import Tilt from 'react-parallax-tilt';
 
 
 const Hero = () => {
@@ -43,6 +44,26 @@ const Hero = () => {
           
           {/* Profile Image */}
           <div className={`flex justify-center lg:justify-end lg:mr-20 order-1 lg:order-2 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
+  <Tilt
+    tiltMaxAngleX={15}
+    tiltMaxAngleY={15}
+    glareEnable={true}
+    glareMaxOpacity={0.15}
+    scale={1.05}
+    transitionSpeed={2500}
+    className="w-80 h-80" // ensures fixed width for layout
+  >
+    <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
+      <img 
+        src="/public/profile-img.png" 
+        alt="Muhammad Umair Jabbar" 
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-full opacity-20 blur-xl"></div>
+    </div>
+  </Tilt>
+</div>
+{/* <div className={flex justify-center lg:justify-end lg:mr-20 order-1 lg:order-2 ${isVisible ? 'fade-in' : 'opacity-0'}}>
 
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
@@ -54,8 +75,7 @@ const Hero = () => {
               </div>
               <div className="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-full opacity-20 blur-xl"></div>
             </div>
-          </div>
-
+          </div> */}
           {/* Hero Content */}
           <div className={`text-center lg:text-left order-2 lg:order-1 ${
             isVisible ? 'slide-up' : 'opacity-0'
