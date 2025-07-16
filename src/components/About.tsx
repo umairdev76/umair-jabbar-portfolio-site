@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { GraduationCap, MapPin, Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-
+import { motion } from 'framer-motion';
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);

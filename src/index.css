@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System - Modern Dark Theme with Gradients */
-
+/* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+/* =====================
+   Base Design Variables
+   ===================== */
 @layer base {
   :root {
     /* Dark portfolio theme */
@@ -18,7 +20,6 @@
     --popover: 222 84% 6%;
     --popover-foreground: 210 40% 98%;
 
-    /* Purple-blue gradient primary */
     --primary: 256 100% 65%;
     --primary-foreground: 210 40% 98%;
     --primary-glow: 256 100% 75%;
@@ -39,12 +40,12 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 256 100% 65%;
 
-    /* Custom portfolio colors */
+    /* Gradients */
     --hero-gradient: linear-gradient(135deg, hsl(256 100% 65%), hsl(280 100% 70%));
     --card-gradient: linear-gradient(145deg, hsl(222 84% 6%), hsl(222 84% 8%));
     --accent-gradient: linear-gradient(90deg, hsl(256 100% 65%), hsl(280 100% 70%));
-    
-    /* Shadows with glow effects */
+
+    /* Shadows */
     --shadow-glow: 0 0 40px hsl(256 100% 65% / 0.3);
     --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
     --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
@@ -55,25 +56,19 @@
 
     --radius: 0.5rem;
 
+    /* Sidebar Colors */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .light {
-    /* Light mode fallback - keeping same dark theme for consistency */
+    /* Light theme fallback (still dark for consistency) */
     --background: 222 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222 84% 6%;
@@ -81,59 +76,66 @@
     --primary: 256 100% 65%;
     --primary-foreground: 210 40% 98%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background text-foreground font-inter antialiased;
     scroll-behavior: smooth;
   }
-
-  html {
-    scroll-behavior: smooth;
-  }
 }
 
+/* =====================
+   Components
+   ===================== */
 @layer components {
   .hero-text {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
-  
+
   .card-glow {
     @apply shadow-[0_0_40px_hsl(256_100%_65%_/_0.2)] border border-border/20;
   }
-  
+
   .button-glow {
     @apply shadow-[0_0_20px_hsl(256_100%_65%_/_0.4)] hover:shadow-[0_0_30px_hsl(256_100%_65%_/_0.6)];
   }
-  
+
   .fade-in {
     @apply animate-[fadeIn_0.6s_ease-out];
   }
-  
+
   .slide-up {
     @apply animate-[slideUp_0.6s_ease-out];
   }
 }
 
+/* =====================
+   Utilities
+   ===================== */
 @layer utilities {
   .bg-hero-gradient {
     background: var(--hero-gradient);
   }
-  
+
   .bg-card-gradient {
     background: var(--card-gradient);
   }
-  
+
   .bg-accent-gradient {
     background: var(--accent-gradient);
   }
 }
 
+/* =====================
+   Animations
+   ===================== */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -167,4 +169,12 @@
 
 .float-animation {
   animation: float 6s ease-in-out infinite;
+}
+
+/* =====================
+   NEW: Perspective Container (Step 4)
+   ===================== */
+.perspective-container {
+  perspective: 1200px;
+  overflow-x: hidden;
 }
