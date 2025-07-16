@@ -98,7 +98,7 @@ const Hero = () => {
                   View My Work
                 </Button>
                 <a
-                  href="/public/umair-resume.pdf"
+                  href="./umair-resume.pdf"
                   download
                   className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-3 h-auto transition-all duration-300 rounded-md flex items-center gap-2"
                 >
