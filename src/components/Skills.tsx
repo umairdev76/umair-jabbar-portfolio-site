@@ -28,6 +28,7 @@ const Skills = () => {
     { name: 'CSS3', level: 85, color: 'from-blue-500 to-cyan-500' },
     { name: 'JavaScript', level: 80, color: 'from-yellow-500 to-orange-500' },
     { name: 'React.js', level: 75, color: 'from-cyan-500 to-blue-500' },
+    { name: 'Tailwind CSS', level: 75, color: 'from-cyan-500 to-blue-500' },
     { name: 'Git & GitHub', level: 80, color: 'from-purple-500 to-pink-500' },
     { name: 'C++', level: 70, color: 'from-green-500 to-emerald-500' },
     { name: 'OOP', level: 70, color: 'from-green-500 to-emerald-500' },

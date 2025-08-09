@@ -47,7 +47,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img src="/logo.png" alt="MUJ Logo" className="h-12 w-auto" />
-              <span className="text-xl font-bold text-white">MUJ</span>
+              {/* <span className="text-xl font-bold text-white">MUJ</span> */}
             </div>
 
             {/* Desktop Navigation */}

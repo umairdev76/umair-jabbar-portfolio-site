@@ -47,7 +47,8 @@ const Portfolio = () => {
       icon: Code,
       gradient: 'from-purple-500 to-pink-500',
       features: ['Membership Plans', 'Trainer Profiles', 'Class Schedules', 'Online Booking'],
-      demoLink: "https://gymsportzone.netlify.app/"
+      demoLink: "https://gymsportzone.netlify.app/",
+      demoCode: "https://github.com/umairdev76/GymSportZone"
     },
     {
       id: 3,
@@ -59,7 +60,8 @@ const Portfolio = () => {
       icon: Palette,
       gradient: 'from-orange-500 to-red-500',
       features: ['Product Catalog', 'Shopping Cart', 'Payment Gateway', 'Order Management'],
-      demoLink: "https://sport-zone-export.netlify.app/"
+      demoLink: "https://sport-zone-export.netlify.app/",
+      demoCode: "https://github.com/umairdev76/sport-zone"
     }
   ];
 
@@ -106,6 +108,7 @@ const Portfolio = () => {
                         size="sm"
                         variant="outline"
                         className="bg-background/90 hover:bg-primary"
+                        onClick={() => window.open(project.demoCode, "_blank")}
                       >
                         <Github className="h-4 w-4 mr-1" />
                         Code
