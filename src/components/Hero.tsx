@@ -46,7 +46,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-14 py-20 relative z-10">
+      <div className="container mx-auto lg:px-14 px-0 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Profile Image */}
           <div className={`flex justify-center lg:justify-end lg:mr-20 order-1 lg:order-2 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
@@ -61,7 +61,7 @@ const Hero = () => {
             >
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
                 <img
-                  src="/public/profile-img.png"
+                  src="/profile-img.png"
                   alt="Muhammad Umair Jabbar"
                   className="w-full h-full object-cover object-top scale-125"
                 />
