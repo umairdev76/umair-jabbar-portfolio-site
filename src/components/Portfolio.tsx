@@ -46,7 +46,8 @@ const Portfolio = () => {
       category: 'Business Website',
       icon: Code,
       gradient: 'from-purple-500 to-pink-500',
-      features: ['Membership Plans', 'Trainer Profiles', 'Class Schedules', 'Online Booking']
+      features: ['Membership Plans', 'Trainer Profiles', 'Class Schedules', 'Online Booking'],
+      demoLink: "https://gymsportzone.netlify.app/"
     },
     {
       id: 3,
@@ -57,7 +58,8 @@ const Portfolio = () => {
       category: 'E-Commerce',
       icon: Palette,
       gradient: 'from-orange-500 to-red-500',
-      features: ['Product Catalog', 'Shopping Cart', 'Payment Gateway', 'Order Management']
+      features: ['Product Catalog', 'Shopping Cart', 'Payment Gateway', 'Order Management'],
+      demoLink: "https://sport-zone-export.netlify.app/"
     }
   ];
 
@@ -91,9 +93,11 @@ const Portfolio = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 right-4 flex gap-2">
+                      
                       <Button
                         size="sm"
                         className="bg-primary/90 hover:bg-primary text-primary-foreground"
+                        onClick={() => window.open(project.demoLink, "_blank")}
                       >
                         <ExternalLink className="h-4 w-4 mr-1" />
                         Demo
