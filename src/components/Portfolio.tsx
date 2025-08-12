@@ -31,7 +31,7 @@ const Portfolio = () => {
       title: 'Book Management System',
       description: 'A comprehensive digital library management system with user authentication, book catalog, borrowing system, and admin dashboard for managing inventory.',
       image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop',
-      technologies: ['React.js', 'JavaScript', 'CSS3', 'Local Storage'],
+      technologies: ['HTML5', 'CSS3', 'JavaScript'],
       category: 'Web Application',
       icon: Database,
       gradient: 'from-blue-500 to-cyan-500',
@@ -40,26 +40,26 @@ const Portfolio = () => {
     {
       id: 2,
       title: 'Gym Sport Zone Website',
-      description: 'Modern fitness center website featuring membership plans, trainer profiles, class schedules, and online booking system with responsive design.',
+      description: 'Shop high-quality gym equipment, workout gear, sportswear, and supplements at GymSportZone. Enjoy secure payments, fast delivery, and everything you need to power your fitness journey – all in one place.',
       image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
       category: 'Business Website',
       icon: Code,
       gradient: 'from-purple-500 to-pink-500',
-      features: ['Membership Plans', 'Trainer Profiles', 'Class Schedules', 'Online Booking'],
+      features: ['Product Catalog', 'Discounts & Offers', 'Shopping Cart', 'Fast Delivery'],
       demoLink: "https://gymsportzone.netlify.app/",
       demoCode: "https://github.com/umairdev76/GymSportZone"
     },
     {
       id: 3,
       title: 'Exporting E-Commerce Store',
-      description: 'Full-featured e-commerce platform for export businesses with product catalog, shopping cart, payment integration, and order management system.',
+      description: 'Discover premium sports equipment, apparel, and accessories with worldwide shipping. SportZone delivers top-quality products to athletes, gyms, and retailers across the globe.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      technologies: ['React.js', 'Node.js', 'MongoDB', 'Payment APIs'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
       category: 'E-Commerce',
       icon: Palette,
       gradient: 'from-orange-500 to-red-500',
-      features: ['Product Catalog', 'Shopping Cart', 'Payment Gateway', 'Order Management'],
+      features: ['Product Catalog', 'Shopping Cart', 'Global Shipping', 'Order Management'],
       demoLink: "https://sport-zone-export.netlify.app/",
       demoCode: "https://github.com/umairdev76/sport-zone"
     }
@@ -93,7 +93,7 @@ const Portfolio = () => {
                     alt={project.title}
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"> */}
                     <div className="absolute bottom-4 left-4 right-4 flex gap-2">
                       
                       <Button
@@ -114,7 +114,7 @@ const Portfolio = () => {
                         Code
                       </Button>
                     </div>
-                  </div>
+                  {/* </div> */}
                 </div>
 
                 <CardContent className="p-6 flex flex-col h-[calc(100%-12rem)]">
